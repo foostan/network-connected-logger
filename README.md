@@ -1,10 +1,8 @@
 # network-connected-logger
 
 # Setup
-```
-crontab -e
-```
+execute `crontab -e` and edit
 
 ```cron
-*/5 * * * * PATH="/bin/:/sbin/:/usr/sbin:$PATH" $PATH/network-connected-logger/network-connected-logger
+*/5 * * * * PATH="/bin/:/sbin/:/usr/sbin:$PATH" $FULL_PATH/network-connected-logger/network-connected-logger
 ```
