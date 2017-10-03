@@ -1,0 +1,6 @@
+#!/bin/sh
+NOW=`date +"%Y/%m/%d %k:%M:%S"`
+WIFI=`networksetup -getairportnetwork en0`
+IP=`ifconfig en0 inet | grep inet`
+
+echo $NOW $WIFI $IP>> ~/logs/wifi.log
